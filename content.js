@@ -8,9 +8,14 @@ var searching2 = 'https://mbasic.facebook.com/groups/';
 if(actual_url.indexOf(searching) != -1){
 		//found it! (for debug.. njareb)
 		console.log("Found it Yeah");
-		$('form:eq( 1 )').submit();
+		$("form[action='/a/group/leave/?qp=0']").submit();
 		console.log("button clicked");
-		chrome.runtime.sendMessage({type: "closeTab"});
+		setTimeout(
+			  function() 
+			  {
+			chrome.runtime.sendMessage({type: "closeTab"});
+			  }, 2000);
+		
 }
 
 
