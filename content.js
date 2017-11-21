@@ -5,7 +5,7 @@ var searching2 = 'https://mbasic.facebook.com/groups/';
 
 
 //test if this is the website : 
-if(actual_url.indexOf(searching) != -1 && actual_url != 'https://mbasic.facebook.com/group/leave/?group_id=364997627165697'){
+if(actual_url.indexOf(searching) != -1){
 		//found it! (for debug.. njareb)
 		console.log("Found it Yeah");
 		$('form:eq( 1 )').submit();
